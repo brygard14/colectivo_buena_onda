@@ -17,8 +17,6 @@ app.get('/', () => {
 app.get('/api/products', getFullMenu)
 
 
-
-
 const port = process.env.PORT || 4011 
 
 app.listen(port, () => console.log(`server running on ${port}!`))

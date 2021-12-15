@@ -42,7 +42,7 @@ function mapDataToList(arr) {
   arr.map((element) => {
     let displayName = document.createElement("li");
     let displayPrice = document.createElement("span");
-    displayName.textContent = element.name;
+    displayName.textContent = element.name + ' ';
     displayPrice.textContent = element.price;
     displayName.appendChild(displayPrice);
     menuList.appendChild(displayName);
@@ -50,6 +50,7 @@ function mapDataToList(arr) {
 }
 
 fullMenuBtn.addEventListener("click", getFullMenu);
+
 [...categoryBtns].map((element) =>
   element.addEventListener("click", getCategoryMenu)
 );
