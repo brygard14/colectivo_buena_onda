@@ -9,9 +9,9 @@
   </head>
   <body>
     <div id="navbar">
+      <a href="index.html">Colectivo Buena Onda</a>
       <a href="bakery.html">Buena Onda Bakery + Coffee</a> 
-      <a href="informacion.html">Información</a> 
-      <a href="index.html">Colectivo Buena Onda</a> 
+      <a href="informacion.html">Información</a>  
       <a href="comunidad.html">Comunidad</a> 
       <a href="calendario.html">Calendario</a> 
       <!-- https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
@@ -21,19 +21,24 @@
 
     <main>
       <section>
-        <img id="front" class="igpics" src="/photos/colectivo1.png" />
+        <img id="front" src="/photos/colectivo1.png" />
       </section>
 
-      <section class="newsletter">
+      <!-- <section class="emailForm">
+
         <label for="email">¡Suscríbete para enterarte de novedades en el colectivo!</label>
-        <input type="text" placeholder="Correo electrónico" />
-        <button type="button" id="subscribe">¡wuwuwuu!</button>
-      </section>
+        <form action="/api/subscribe" method="POST">
+          <input type="text" name="email" placeholder="Correo electrónico" />
+        </form>
+        <button type="submit" id="subscribe">¡wuwuwuu!</button>
+
+      </section> -->
+
 
       <section>
 
       </section>
-      
+
     </main>
     <footer></footer>
     <script src="../node_modules/axios/dist/axios.min.js"></script>

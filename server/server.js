@@ -3,6 +3,7 @@ const { getFullMenu } = require('../server/controller/productController')
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
+const res = require('express/lib/response');
 
 const app = express()
 
@@ -15,6 +16,12 @@ app.get('/', () => {
 })
 
 app.get('/api/products', getFullMenu)
+
+
+// app.post('/api/subscribe', function(req,res) {
+//     res.send('Gracias por suscribirte!');
+//     // return res.redirect('/new_subscriber')
+// });
 
 
 const port = process.env.PORT || 4011 
